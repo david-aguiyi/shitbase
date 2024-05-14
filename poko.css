@@ -35,6 +35,10 @@ body {
 	
 }
 
+.contn{
+	margin-top: 150px;
+}
+
 .contn p, .contn h2{
 	color: black;
 }
@@ -613,7 +617,7 @@ button.buy {
 
 footer p {
 	text-align: center;
-	margin-bottom: 20px;
+	margin-block: 20px;
 }
 
 .descript {
