@@ -64,7 +64,7 @@ body {
 }
 
 img.uni{
-	width: 50%;
+	width: 300px;
 	position: absolute;
 	top: -60px;
 	left: 50%;
@@ -99,7 +99,7 @@ img.coin{
 }
 
 .center {
-	margin-top: 9rem;
+	margin-top: 5rem;
 }
 
 header {
@@ -252,7 +252,7 @@ img.line {
 main {
 	display: block;
 	/* padding-top: 1rem; */
-	overflow-x: hidden;
+	/* overflow-x: hidden; */
 }
 
 .main-text {
@@ -849,7 +849,7 @@ footer p {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	height: 100vh;
+	/* height: 100vh; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
