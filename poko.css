@@ -1,42 +1,88 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 * {
-	color: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: inherit;
 }
 
-@font-face {
-	font-family: Space;
-	src: url(SnackerComic_PerosnalUseOnly.ttf);
-}
-
-@font-face {
-	font-family: snart;
-	src: url(buycat-e99on.otf);
-}
-
 :root {
-	--font-family: Space;
-}
-a {
-	text-decoration: none;
+	--font-family: "Nunito", sans-serif;
 }
 
 body {
-	background: #e7bd32;
+	background: rgb(0, 0, 0);
 	margin: 0;
 	overflow-x: hidden;
+	max-width: 1400px;
 	width: 100%;
-	max-width: 1540px;
+	max-width: 2000px;
 	font-family: var(--font-family);
 }
 
+
+
+.logot-text {
+	font-size: 1.4rem;
+	font-weight: bold;
+	font-family: var(--font-family);
+	margin-left: 20px;
+	color: rgb(24, 24, 18);
+	font-weight: 800;
+	display: flex;
+	/* letter-spacing: 3.4px; */
+	
+}
+
+.contn p, .contn h2{
+	color: black;
+}
+.svg-icon {
+	display: none;
+}
+
+.hero-text{
+	font-size: 31px;
+	font-weight: 900;
+}
+
+.hero {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	padding: 4rem;
+	align-items: center;
+	font-weight: 600;
+	font-size: 1.4rem;
+	justify-content: center;
+	text-align: center;
+}
+
+img.uni{
+	width: 50%;
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+img.coin{
+	width: 200px;
+	position: absolute;
+	top: -60px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.hero img {
+	width: 50%;
+	/* padding: 50px; */
+	/* display: none; */
+}
+
+
 .senthead {
 	/* backdrop-filter: blur(15px); */
-	/* border-bottom: 1px solid rgba(255, 255, 255, 0.14); */
 	position: fixed;
 	height: 6em;
 	z-index: 3;
@@ -49,38 +95,7 @@ body {
 }
 
 .center {
-	margin-top: 3rem;
-	text-align: center;
-}
-
-.center img {
-	width: 100%;
-}
-
-.centered-text {
-	text-align: center;
-	font-size: 8rem;
-	font-weight: bold;
-	font-family: Arial, Helvetica, sans-serif;
-	color: #366cb4;
-	display: flex;
-	text-shadow: 0px 1px 0px rgb(34, 62, 145), 0px 2px 0px royalblue,
-		0px 3px 0px royalblue, 0px 4px 0px royalblue, 0px 6px 0px royalblue,
-		0px 13px 5px rgb(44, 53, 82);
-
-	justify-content: center;
-	align-items: center;
-}
-
-.centered-text2 {
-	text-align: center;
-	font-size: 29px;
-	font-family: "Space Mono", monospace;
-	display: flex;
-	/* letter-spacing: -3px; */
-	font-weight: 700;
-	justify-content: center;
-	align-items: center;
+	margin-top: 9rem;
 }
 
 header {
@@ -92,116 +107,104 @@ header {
 	width: 90%;
 	padding-top: 0.8rem;
 }
+@media screen and (width < 430px) {
+	header {
+		padding-top: 1rem;
+	}
+}
 
 .logo {
 	display: block;
 }
 .logo img {
-	width: 100px;
+	width: 110px;
 	padding-left: 1rem;
 }
 
-@media screen and (width < 430px) {
-	header {
-		padding-top: 1rem;
-	}
-	.logo img {
-		width: 100px;
-		padding-left: 1rem;
-	}
-}
-
 button {
-	font-weight: 900;
-	background-color: #366cb4;
-	/* color: rgb(39, 26, 26); */
+	font-weight: 700;
+	background-color: #0052ff;
+	color: #ffffff;
 	cursor: pointer;
-	color: white;
 	display: inline-flex;
-	font-size: 1.5rem;
 	align-items: center;
+	border: none;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
-	border: 2px solid rgb(39, 26, 26);
-	border-bottom: 5px solid rgb(39, 26, 26);
-	border-radius: 30px;
-	width: 100px;
-	height: 50px;
+	/* border: 2px solid rgb(255, 255, 255); */
+	/* border-bottom: 5px solid #ffffff; */
+	border-radius: 10px;
+	width: 150px;
+	height: 60px;
+	font-family: inherit;
+	font-size: 25px;
+}
+
+span {
+	color: #d99e14;
 }
 
 .main-button {
-	margin-top: 7em;
+	/* padding-top: 2em; */
 	display: flex;
-	padding-inline: 50px;
-	justify-content: space-between;
+	justify-content: center;
+	padding-top: 2rem;
 }
 
 .main-button button {
 	border-radius: 12px;
-	margin-top: 4rem;
-}
-
-.snart img {
-	width: 100%;
-	text-align: center;
-}
-
-.center p {
-	font-size: 5rem;
-	color: rgb(34, 62, 145);
+	/* margin-top: 25rem; */
 }
 
 .main-button button.launch,
 .main-button button.docs {
 	font-weight: 700;
-	background-size: contain;
-	background-color: #32302a;
-	color: rgb(255, 255, 255);
+	background-color: #0052FF;
+	color: #ffffff;
 	cursor: pointer;
 	display: inline-flex;
-	width: 200px;
-	height: 70px;
+	width: 150px;
+	height: 60px;
 	font-family: inherit;
-	font-size: 30px;
+	font-size: 25px;
 	align-items: center;
 	justify-content: center;
 	transition: 0.2s ease-in-out;
-	border: 2px solid rgb(39, 26, 26);
-	border-bottom: 5px solid rgb(39, 26, 26);
+	/* border: 2px solid #ffffff; */
+	/* border-bottom: 5px solid rgb(255, 255, 255); */
 }
 
 .main-button button.launch:hover,
 .main-button button.docs:hover,
 button:hover {
-	border-bottom: 6px solid rgb(39, 26, 26);
+	border-bottom: 6px solid #d99e14;
 }
 .main-button button.launch:active,
 .main-button button.docs:active,
 button:active {
 	transition: 0.1s ease-in-out;
 	height: 50px;
-	border-bottom: 2px solid rgb(39, 26, 26);
-	border-top: 3px solid rgb(39, 26, 26);
+	border-bottom: 2px solid #d99e14;
+	border-top: 3px solid #d99e14;
 }
 
 .section-12 {
 	display: flex;
-	background-color: #366cb4;
+	background-color: #F8FD03;
 	justify-content: center;
 	align-items: center;
 }
 .whole {
-	background-color: #000000;
+	background-color: #deaf3c;
 	margin: 30px;
 	padding: 20px;
-	border: 2px solid rgb(39, 26, 26);
-	border-radius: 50px;
-	width: 1050px;
+	border: 2px solid #d99e14;
+	border-radius: 20px;
+	width: 90%;
 	box-shadow: rgba(5, 5, 5, 0.2) 0px 11px 15px 0px,
 		rgba(5, 5, 5, 0.14) 0px 24px 38px 0px, rgba(5, 5, 5, 0.25) 0px 4px 4px 0px;
 	align-items: center;
 }
-
 .left h1 {
 	font-size: 40px;
 	font-weight: 700;
@@ -212,7 +215,7 @@ button:active {
 }
 .right img {
 	padding-top: 40px;
-	width: 300px;
+	width: 100%;
 }
 
 @keyframes bounce {
@@ -252,17 +255,6 @@ main {
 	position: relative;
 	letter-spacing: 0.02em;
 	padding: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	font-size: 2rem;
-	color: white;
-}
-
-.main-text span {
-	font-size: clamp(1rem, 8vw - 2rem, 3rem);
-	font-family: snart;
 }
 pre {
 	font-size: 0.9rem;
@@ -283,49 +275,6 @@ h1.bold-text {
 	letter-spacing: 0em;
 	display: block;
 	margin: 0 auto;
-}
-
-.hero-orange {
-	position: absolute;
-	top: 0em;
-	left: 4em;
-	z-index: -1;
-}
-
-.hero-orange img {
-	width: 70px;
-	animation: bounce 9s infinite;
-}
-
-.hero-3-4 {
-	padding-top: 4rem;
-	margin: 0 auto;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-
-.hero-buy {
-	width: auto;
-	padding-top: 0.6rem;
-	margin-left: -0.9rem;
-	max-width: 30%;
-}
-
-.main-text img {
-	width: 70%;
-	text-align: center;
-}
-
-.hero-sell {
-	width: auto;
-	padding-top: 7px;
-	max-width: 28%;
-}
-
-.hero-line {
-	width: auto;
-	max-width: 15%;
 }
 
 .section-2 .features > div {
@@ -377,25 +326,22 @@ h1.bold-text {
 	width: 94%;
 }
 
-.cypimg {
-	/* width: 580px; */
-	display: flex;
-	flex-wrap: wrap;
-}
-
-img.commerce {
+img.commerce,
+img.nft,
+img.smart,
+img.exchange {
 	max-width: 600px;
-	width: 50%;
+	width: 95%;
+	border-radius: 20px;
 	display: block;
-	cursor: pointer;
 	justify-content: center;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -6em;
+	margin-top: 4em;
 }
 
-.poko,
+.p2p-loans,
 .nft-insur,
 .smart-1,
 .commerce,
@@ -408,7 +354,7 @@ img#comm {
 	margin-right: -1em;
 }
 
-.poko span,
+.p2p-loans span,
 .nft-insur span,
 .smart-1 span,
 .commerce span,
@@ -416,26 +362,23 @@ img#comm {
 	color: var(--green-color);
 }
 
-.poko b {
+.p2p-loans b {
 	font-weight: 900;
 	/* padding-bottom: 0.2rem; */
 	/* line-height: 2em; */
-	font-size: 4em;
-	color: #366cb4;
-	margin-top: 5rem;
+	font-size: 2em;
 	word-spacing: 10px;
 	display: flex;
 	flex-direction: column;
 	/* transition: 0.23s ease-in-out; */
 	cursor: pointer;
+	color: #0052ff;
 	font-weight: 900;
 }
 
-.p2p-info p {
+.p2p-info {
 	padding-top: 1em;
 	width: auto;
-	color: rgb(255, 255, 255);
-	font-family: snart;
 	display: flex;
 	max-width: 650px;
 	align-items: center;
@@ -447,110 +390,48 @@ img#comm {
 	font-size: 1.3em;
 }
 
-.check {
-	/* display: flex; */
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-}
 .check ul {
 	list-style: none;
-	margin-top: 40px;
-	/* width: 40%; */
-	/* width: 900px; */
-	flex-wrap: wrap;
-	display: flex;
-	font-size: 3rem;
 }
 .check ul li {
 	display: flex;
-	padding: 1em;
-	/* flex-direction: column; */
-	/* background-color: #5c8a1700; */
-	border: 5px solid #366cb4;
-	border-radius: 20px;
-	margin-inline: 30px;
-	align-items: center;
-	text-align: center;
-	font-size: clamp(1.5rem, 8vw - 2rem, 3rem);
-	margin-bottom: 33px;
-	justify-content: center;
-	/* max-width: 650px; */
+	padding-top: 1em;
+	max-width: 650px;
 }
-
 .check ul li img {
 	padding-right: 1em;
 }
 .check ul li p {
-	color: white;
 	margin-top: 5px;
-	font-family: snart;
 	font-weight: 700;
-	word-spacing: 3px;
+	border-bottom: 1.5px solid #0052ff;
 }
 
 .checksmart ul li p {
 	margin-top: -16px;
 }
-.poko button {
-	border-radius: 30px;
-	margin-top: 1em;
-	color: rgb(255, 255, 255);
-	width: 230px;
-	height: 60px;
-	font-size: 2rem;
+.p2p-loans button,
+.nft-insur button,
+.smart-1 button {
+	border-radius: 10px;
+	margin-top: 5em;
+	color: #ffffff;
+	width: 240px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	font-weight: 700;
 	text-align: center;
-	border-bottom: 5px solid rgb(39, 26, 26);
-}
-
-input::selection {
-	background: none;
-}
-input::-moz-selection {
-	background: none;
-}
-input::-webkit-selection {
-	background: none;
-}
-input::-ms-selection {
-	background: none;
+	border: none;
+	/* border-bottom: 5px solid #ffffff; */
 }
 
 .smart-button {
 	display: flex;
 }
 
-.contract-cont {
-	/* background-color: rgb(141, 48, 48); */
-	margin-inline: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding-inline: 20px;
-}
-.contract-cont h2 {
-	font-size: 6px;
-}
-.contract-cont svg {
-	width: 20px;
-	margin-left: 1rem;
-	cursor: pointer;
-	color: white;
-}
-.contract-cont p {
-	/* width: 2rem;
-	margin-right: 30px; */
-}
-.contract-cont input {
-	font-size: 1rem;
-}
-
-.contract-cont p {
-	font-weight: 700;
+a{
+	text-decoration: none;
 }
 .section-4 {
 	display: flex;
@@ -581,173 +462,9 @@ input::-ms-selection {
 	text-align: center;
 }
 
-/* The actual timeline (the vertical ruler) */
-.container {
-	font-family: snart;
-}
-.main-timeline-4 {
-	position: relative;
-	margin-top: 3rem;
-}
-
-/* The actual timeline (the vertical ruler) */
-.main-timeline-4::after {
-	content: "";
-	position: absolute;
-	width: 3px;
-	background-color: #366cb4;
-	top: 0;
-	bottom: 0;
-	left: 50%;
-	margin-left: -3px;
-}
-
-/* Container around content */
-.timeline-4 {
-	position: relative;
-	background-color: inherit;
-	width: 50%;
-}
-
-.card {
-	border-radius: 10px;
-}
-
-.card-body ul li {
-	list-style-type: none;
-	margin-top: 1rem;
-	color: white;
-	display: flex;
-	align-items: center;
-	flex-direction: row;
-}
-
-.card-body ul li img {
-	margin-right: 1rem;
-}
-
-.card-body h4 {
-	font-size: 2.5rem;
-}
-.card-body p {
-	font-family: Space;
-	font-size: 2rem;
-}
-
-.container h1 {
-	/* display: flex; */
-	text-align: center;
-	font-family: Space;
-	font-size: 3rem;
-}
-.card-body.p-4 {
-	padding: 30px;
-}
-
-/* The circles on the timeline */
-.timeline-4::after {
-	content: "";
-	position: absolute;
-	width: 25px;
-	height: 25px;
-	right: -11px;
-	background-color: rgb(39, 26, 26);
-	top: 15px;
-	border-radius: 50%;
-	z-index: 1;
-}
-
-/* Place the container to the left */
-.left-4 {
-	padding: 0px 40px 20px 0px;
-	left: 0;
-}
-
-/* Place the container to the right */
-.right-4 {
-	padding: 0px 0px 20px 40px;
-	left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
-.left-4::before {
-	content: " ";
-	position: absolute;
-	top: 18px;
-	z-index: 1;
-	right: 30px;
-	border: medium solid rgba(37, 117, 252, 1);
-	border-width: 10px 0 10px 10px;
-	border-color: transparent transparent transparent rgb(39, 26, 26);
-}
-
-/* Add arrows to the right container (pointing left) */
-.right-4::before {
-	content: " ";
-	position: absolute;
-	top: 18px;
-	z-index: 1;
-	left: 30px;
-	border: medium solid #366cb4;
-	border-width: 10px 10px 10px 0;
-	border-color: transparent rgb(39, 26, 26) transparent transparent;
-}
-
-/* Fix the circle for containers on the right side */
-.right-4::after {
-	left: -14px;
-}
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media screen and (max-width: 600px) {
-	/* Place the timelime to the left */
-	.main-timeline-4::after {
-		left: 31px;
-	}
-
-	/* Full-width containers */
-	.timeline-4 {
-		width: 100%;
-		padding-left: 70px;
-		padding-right: 25px;
-	}
-
-	/* Make sure that all arrows are pointing leftwards */
-	.timeline-4::before {
-		left: 60px;
-		border: medium solid white;
-		border-width: 10px 10px 10px 0;
-		border-color: transparent rgb(39, 26, 26) transparent transparent;
-	}
-
-	/* Make sure all circles are at the same spot */
-	.left-4::after,
-	.right-4::after {
-		left: 18px;
-	}
-
-	.left-4::before {
-		right: auto;
-	}
-
-	/* Make all right containers behave like the left ones */
-	.right-4 {
-		left: 0%;
-	}
-}
-
-.gradient-custom {
-	background: #366cb4;
-	border: 2px solid rgb(39, 26, 26);
-}
-
-.gradient-custom-4 {
-	background: #366cb4;
-	border: 2px solid rgb(39, 26, 26);
-}
-
 .some h1 {
 	margin-bottom: -10px;
+	font-weight: 900;
 }
 
 .step .fp {
@@ -758,7 +475,7 @@ input::-ms-selection {
 
 .fcard {
 	padding: 30px;
-	background-color: #f1c40f;
+	background-color: #0052ff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -776,7 +493,7 @@ input::-ms-selection {
 
 .fcard2 {
 	padding: 30px;
-	background-color: #366cb4;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -794,32 +511,12 @@ input::-ms-selection {
 }
 
 button.buy {
+	width: 250px;
 	margin-top: 1rem;
-	background-color: #f1c40f;
+	font-weight: 800;
+	background-color: #0052ff;
 }
 
-.tools {
-	display: flex;
-	justify-content: space-around;
-	row-gap: 40px;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 3rem;
-	margin-bottom: 2rem;
-}
-
-.email h1 {
-	font-size: 3rem;
-}
-
-.email p {
-	font-size: 2rem;
-	font-family: snart;
-}
-
-.dext h1 {
-	font-size: 3rem;
-}
 .dimag img {
 	width: 300px;
 	position: absolute;
@@ -828,19 +525,12 @@ button.buy {
 	transform: translateX(-50%);
 }
 
-.dimag img.uni {
-	width: 400px;
-}
-
-.dimag img.base {
-	width: 200px;
-}
 .cont {
 	margin-top: 150px;
 }
 
 .cont h2 {
-	color: black;
+	color: #ffffff;
 	font-weight: 900;
 	margin-bottom: -10px;
 }
@@ -851,40 +541,20 @@ button.buy {
 }
 
 .cont p {
-	color: #000000;
+	color: #ffffff;
 }
 
 .ca {
-	font-family: "snart";
-	color: white;
+	font-size: 10px;
 	margin-top: 1rem;
-	text-align: center;
-	font-size: 2.2rem;
 }
 
-.section-e {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	/* margin-top: 3rem; */
-	margin-bottom: -7rem;
-}
-input {
-	background-color: rgba(0, 0, 0, 0);
-	border: none;
-	outline: none;
-}
 .swap {
 	font-weight: 900;
 }
 
-#ca-num {
-	margin-top: 0.5rem;
+.ca-num {
 	font-weight: 900;
-	margin-left: 0.5rem;
-	font-size: clamp(1.2rem, 8vw - 2rem, 2rem);
-	font-family: "snart";
 }
 
 .section-5 {
@@ -892,16 +562,27 @@ input {
 	margin-top: 3rem;
 }
 
+.why {
+	font-size: 2rem;
+	font-weight: bold;
+	font-family: pokemon;
+	margin-left: 20px;
+	color: rgb(239, 235, 9);
+	display: flex;
+	letter-spacing: 3.4px;
+	text-shadow: 0px 1px 0px rgb(34, 62, 145), 0px 2px 0px royalblue,
+		0px 3px 0px royalblue, 0px 4px 0px royalblue, 0px 6px 0px royalblue,
+		0px 13px 5px rgb(44, 53, 82);
+}
 .fcard3 {
 	padding: 30px;
-	background-color: #f1c40f;
+	background-color: #0052ff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: left;
 	margin: 20px;
-
 	margin-top: 100px;
 	font-size: 14px;
 	font-weight: 400;
@@ -916,8 +597,8 @@ input {
 	margin-top: 100px;
 }
 .sect-cont {
-	background-color: #366cb4;
-	border: 2px solid #f1c40f;
+	background-color: #0052ff;
+	border: 2px solid #291f06;
 	padding: 20px;
 	margin: 30px;
 	box-shadow: rgba(5, 5, 5, 0.2) 0px 11px 15px 0px,
@@ -926,44 +607,43 @@ input {
 	text-align: center;
 }
 .lasimag img {
-	width: 100%;
+	width: 70%;
 	border-radius: 20px;
 }
 
 footer p {
 	text-align: center;
-	font-family: snart;
 	margin-bottom: 20px;
 }
 
 .descript {
 	margin-top: 20px;
+	color: black;
+	font-size: 1rem;
+	font-weight: bold;
+	font-family: pokemon;
 }
 
 .buttons button {
-	/* width: 100%; */
 	height: 60px;
 	margin-top: 20px;
-	width: 250px;
-	/* border: 2px solid #; */
+	border: 2px solid #ffffff;
+	font: 30px;
 	font-weight: 700;
-}
-
-button img {
-	width: 20px;
-	margin-left: 10px;
+	padding-inline: 12rem;
+	white-space: nowrap;
+	/* width: 50%; */
 }
 
 .buttons {
 	display: flex;
-	font-size: 3rem;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 }
 .fcard4 {
 	padding: 30px;
-	background-color: #366cb4;
+	background-color: #ffffff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -1042,10 +722,6 @@ button img {
 		width: 5.5rem;
 	}
 
-	.hero-orange img {
-		width: 85px;
-	}
-
 	@media (min-width: 800px) {
 		h1.bold-text {
 			font-size: 3rem;
@@ -1073,9 +749,9 @@ button img {
 		}
 
 		button {
-			width: 150px;
-			height: 50px;
-			/* font-size: 0.8rem; */
+			width: 120px;
+			height: 45px;
+			font-size: 0.8rem;
 			font-weight: 700;
 		}
 
@@ -1083,8 +759,20 @@ button img {
 			font-weight: 900;
 		}
 
-		.poko,
-		.commerce {
+		img.commerce,
+		img.nft,
+		img.smart,
+		img.exchange {
+			max-width: 800px;
+			width: auto;
+			margin-top: 4em;
+		}
+
+		.p2p-loans,
+		.nft-insur,
+		.smart-1,
+		.commerce,
+		.exchange {
 			padding: 2em;
 			font-size: 1.7rem;
 		}
@@ -1093,18 +781,24 @@ button img {
 			margin: 0 auto;
 		}
 
-		.poko span {
+		.p2p-loans span,
+		.nft-insur span,
+		.smart-1 span,
+		.commerce span,
+		.exchange span {
 			color: var(--green-color);
 		}
 
-		.poko b {
+		.p2p-loans b,
+		.nft-insur b,
+		.smart-1 b,
+		.commerce b,
+		.exchange b {
 			font-weight: 900;
 			padding-bottom: 0.2rem;
 			line-height: 2em;
 			font-size: 1.6em;
-			color: red;
 			word-spacing: 10px;
-			border-bottom: 5px solid #88e900;
 			white-space: nowrap;
 		}
 
@@ -1147,12 +841,14 @@ button img {
 	}
 }
 #section-1 {
+	background-image: url("images/poko3.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
 	height: 100vh;
 	display: flex;
-	/* margin-top: 1rem; */
 	justify-content: center;
 	align-items: center;
-	background-color: #e7bd32;
 }
 
 .green-text {
@@ -1165,8 +861,31 @@ button img {
 	position: relative;
 }
 
+.section-3::before,
+.section-3::after {
+	content: "";
+	position: absolute;
+	width: 20%;
+	height: 20%;
+	border: 4px solid #0052FF;
+}
+
+.section-3::before {
+	top: -23px;
+	right: 0;
+	left: 1%;
+	border-right: none;
+	border-bottom: none;
+}
+
+.section-3::after {
+	right: 3%;
+	border-left: none;
+	border-top: none;
+	bottom: -2.4em;
+}
+
 .section-3 {
-	background-color: #e7bd32;
 	position: relative;
 	margin-top: 8rem;
 	margin-bottom: 5rem;
@@ -1186,42 +905,43 @@ img.right-img {
 
 @media (min-width: 1200px) {
 	body {
-		max-width: 1400px;
+		max-width: 2000px;
 		margin: 0 auto;
 	}
 	.senthead {
 		background: none;
-		height: 7rem;
-		padding: 1rem 1.7rem;
+		height: 5rem;
+		padding-right: 5rem;
 		display: flex;
+		align-items: center;
 		justify-content: center;
 	}
 
 	.section-12 {
 		display: flex;
 		justify-content: center;
-		background-color: #e7bd32;
+		background-color: royalblue;
 	}
 	.whole {
-		background-color: #000000;
-		border: 2px solid rgb(39, 26, 26);
+		border: 2px solid #d99e14;
 		padding: 40px;
 		margin: 30px;
 		border-radius: 20px;
 		display: flex;
-		width: 1000px;
+		width: 90%;
 		justify-content: space-between;
 		align-items: center;
 		/* row-gap: 40px; */
 	}
 
-	.logo img {
-		width: 150px;
-		padding-left: 1rem;
-	}
-
 	.left h1 {
 		font-size: 40px;
+	}
+
+	.hero {
+		display: flex;
+		flex-direction: column;
+		margin-left: 30px;
 	}
 
 	.left {
@@ -1243,17 +963,14 @@ img.right-img {
 	}
 
 	.logo img {
-		padding: 0;
+		padding-top: 2rem;
 	}
 
 	button {
-		width: 200px;
+		width: 150px;
 		height: 60px;
-		font-size: 3rem;
-		color: white;
-		/* padding-left: 50px; */
-		/* padding-inline: 30px; */
-		/* font-size: 80%; */
+		font-family: inherit;
+		font-size: 25px;
 		font-weight: 700;
 	}
 
@@ -1291,18 +1008,6 @@ img.right-img {
 		height: 45px;
 		font-size: 90%;
 		font-weight: 700;
-	}
-
-	.hero-orange {
-		width: 120px;
-	}
-
-	.hero-orange img {
-		width: 77%;
-	}
-
-	.hero-3-4 {
-		width: 1000px;
 	}
 
 	.section-2 .features > .feat {
@@ -1365,31 +1070,18 @@ img.right-img {
 		margin-right: -5rem;
 	}
 
-	img.hero-rug {
-		margin-top: 3.9rem;
-	}
-
-	img.hero-holders {
-		margin-top: 3.5rem;
-	}
-
 	h4.hpull {
 		margin-bottom: 10.2rem;
 	}
 
 	.section-3 {
 		display: flex;
-		background-color: #e7bd32;
 		flex-direction: row-reverse;
-		padding-inline: 20px;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: nowrap;
 	}
 
-	img.hero-p2p {
-		margin-top: 3.5rem;
-	}
 	.section-6,
 	.section-7 {
 		display: flex;
@@ -1397,20 +1089,13 @@ img.right-img {
 		font-size: 120%;
 	}
 
-	img.commerce {
+	img.commerce,
+	img.nft,
+	img.smart,
+	img.exchange {
 		width: auto;
 		margin-right: 2em;
-		width: 200px;
 		max-width: 659px;
-	}
-
-	#ca-num {
-		margin-left: 4rem;
-		font-size: 1.6rem;
-	}
-
-	.contract-cont p {
-		font-size: 3.5rem;
 	}
 
 	img.nft {
@@ -1423,16 +1108,29 @@ img.right-img {
 		margin-right: 50px;
 	}
 
-	.poko {
-		/* padding-left: 2em; */
+	.p2p-loans,
+	.nft-insur,
+	.smart-1,
+	.commerce,
+	.exchange {
+		padding-left: 2em;
 		font-size: 1.3rem;
 		width: auto;
 	}
 
-	.poko {
-		max-width: 700px;
+	.commerce {
+		margin-top: -10rem;
 	}
 
+	.p2p-loans,
+	.nft-insur {
+		max-width: 600px;
+		margin-top: 5rem;
+	}
+	.commerce-info,
+	.exchange-info {
+		width: 548px;
+	}
 	.p2 {
 		width: 548px;
 	}
@@ -1440,6 +1138,16 @@ img.right-img {
 	img#comm {
 		margin-right: -5rem;
 		max-width: 698px;
+	}
+
+	.section-2::after,
+	.section-2::before {
+		height: 300px;
+	}
+
+	.section-2::after {
+		margin-top: -3em;
+		bottom: -0.3999999999999986em;
 	}
 
 	img.right-img,
@@ -1458,11 +1166,33 @@ img.right-img {
 		bottom: 0;
 	}
 
+	.section-3::before {
+		right: 0;
+		top: 39px;
+		left: 1%;
+	}
+
+	.center {
+		margin-top: 7rem;
+	}
+
+	.section-3::after {
+		right: 1%;
+		border-left: none;
+		border-top: none;
+		bottom: 0.6em;
+	}
 	.fcard {
 		width: 400px;
 	}
 	.fcard2 {
 		width: 400px;
+	}
+
+	.hero img {
+		width: 50%;
+		padding: 50px;
+		/* display: block; */
 	}
 
 	.fcard3,
@@ -1476,9 +1206,6 @@ img.right-img {
 		width: 400px;
 		margin-left: 20px;
 		transform: rotate(5deg);
-	}
-	.tools {
-		display: flex;
 	}
 
 	button.buy {
@@ -1494,34 +1221,14 @@ img.right-img {
 		justify-content: center;
 	}
 
-	.center {
-		display: flex;
-		flex-direction: row-reverse;
-	}
-	.snart {
-		width: 100%;
-		margin-left: -20rem;
-	}
-
 	.section-6 {
 		display: flex;
 		margin-top: 70px;
 		justify-content: center;
 	}
-	.center p {
-		font-size: 9rem;
-		color: #366cb4;
-	}
-	.section-e {
-		margin-top: -2rem;
-	}
-	.main-text span {
-		font-size: clamp(1rem, 8vw - 2rem, 2rem);
-		font-family: snart;
-	}
 	.sect-cont {
-		background-color: #366cb4;
-		border: 2px solid rgb(0, 0, 0);
+		background-color: #F8FD03;
+		border: 2px solid #d99e14;
 		padding: 40px;
 		margin: 30px;
 		box-shadow: rgba(5, 5, 5, 0.2) 0px 11px 15px 0px,
@@ -1541,38 +1248,51 @@ img.right-img {
 		width: 30rem;
 		height: 60px;
 		margin-top: 20px;
-		border: 2px solid rgba(37, 117, 252, 1);
+		border: 2px solid #d99e14;
+		font: 30px;
 		font-weight: 700;
 	}
 
-	.cypimg {
-		width: 580px;
-	}
-
-	.container.py-5 {
-		margin-inline: 30px;
-	}
-	.container h1 {
-		font-size: 6rem;
-	}
-
 	.buttons {
-		font-size: 3rem;
 		display: flex;
 		flex-direction: column;
 	}
+}
 
-	header {
-		display: flex;
-		flex-wrap: wrap;
-		flex-direction: row;
-		justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
-		align-items: center;
-		width: 80%;
-		padding-top: 0.8rem;
+@media (max-width: 500px) {
+
+	body{
+color: white;
 	}
 
-	button img {
-		width: 45px;
+	*{
+		color: white;
+	}
+
+	.head-but {
+		display: none;
+	}
+
+	.svg-icon {
+		display: flex;
+		margin-top: 2rem;
+		flex-direction: row;
+		align-items: center;
+		margin-left: 10px;
+	}
+
+	.svg-icon svg {
+		padding-left: 10px;
+		margin-top: -3rem;
+	}
+	.left h1 {
+		font-size: 1.7rem;
+		margin: 0;
+	}
+
+	.buttons button {
+		padding-inline: 7rem;
+		white-space: nowrap;
+		/* width: 50%; */
 	}
 }
