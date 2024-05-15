@@ -77,16 +77,18 @@ margin: 20px;
 
 .contra{
 	text-align: center;
-	margin: 0 auto;
+	/* margin: auto; */
 }
 
 .ca-numt{
 	color: #0052ff;
+	text-align: center;
 }
 
 .ca-num{
 	margin-inline: 30px;
 	font-size: 0.7rem;
+	text-align: center;
 }
 .hero {
 	width: 100%;
