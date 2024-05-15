@@ -147,7 +147,7 @@ header {
 	flex-direction: row;
 	justify-content: space-between; /* will change to space-around when doing media queries for laptop view */
 	align-items: center;
-	width: 90%;
+	width: 70%;
 	padding-top: 0.8rem;
 }
 @media screen and (width < 430px) {
@@ -1305,9 +1305,7 @@ img.right-img {
 
 @media (max-width: 500px) {
 
-	body{
-color: white;
-	}
+	body{color: white;}
 
 	*{
 		color: white;
