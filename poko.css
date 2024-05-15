@@ -51,6 +51,43 @@ body {
 	font-weight: 900;
 }
 
+.logo-section{
+	display: flex;
+	justify-content: center;
+}
+
+.logos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+flex-wrap: wrap;
+width: 70%;
+
+}
+
+.logos li{
+	list-style: none;
+}
+
+.logos li img{
+	width: 50px;
+margin: 20px;
+}
+
+
+.contra{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.ca-numt{
+	color: #0052ff;
+}
+
+.ca-num{
+	margin-inline: 30px;
+	font-size: 0.7rem;
+}
 .hero {
 	width: 100%;
 	display: flex;
